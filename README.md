@@ -1,7 +1,8 @@
 ## TcValidator
 
 Ruby library to validate Turkis Repuplic ID (TC Kimlik NO).
-TcValidator can validate TC ID from fromal webiste [tckimlik.nvi.gov.tr](https://tckimlik.nvi.gov.tr).
+TcValidator can validate TC ID from formal webiste [tckimlik.nvi.gov.tr](https://tckimlik.nvi.gov.tr).
+
 It needs Turkis Repuplic ID (TC Kimlik No), firstname, lastname and birth year to try the validation.
 
 TcValidator also using [Savon](https://github.com/savonrb/savon) gem as runtime dependency
@@ -24,8 +25,33 @@ Or install it yourself as:
     $ gem install tc_validator
 
 ## Usage
+Pass TC ID, firs tname, last ame and birth year as string parameters to validator.
+```ruby
+TcValidator.check_tc_id(tc_id, name, last_name, birth_year)
+```
+More detailed examples:
 
-TODO: Write usage instructions here
+If TC ID square with TC Kimlik No Algorithm TcValidator returns ``` true or false ```
+```ruby
+# if "xxxxxxxxxxx" square with TC Kimlik No Algorithm and not Sadık's ID
+# The below command returns false
+TcValidator.check_tc_id("xxxxxxxxxxx", 'Sadık', 'Ay', '19xx')
+=> false
+```
+
+```ruby
+# if "xxxxxxxxxxx" square with TC Kimlik No Algorithm and other parameters square with Faruk's infos
+# The below command returns true
+TcValidator.check_tc_id("xxxxxxxxxxx", 'Ömer Faruk', 'Aydın', '19xx')
+=> true
+```
+
+```ruby
+# If TC ID  doesn't square with TC Kimlik No Algorithm
+# The above command returns 'Invalid TC ID'
+TcValidator.check_tc_id("11111111111", 'Ekin', 'Kara', '19xx')
+=> Invalid TC ID
+```
 
 ## Development
 
@@ -35,7 +61,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/tc_validator/fork )
+1. Fork it ( https://github.com/sadikay/tc_validator/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

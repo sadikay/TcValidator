@@ -1,8 +1,11 @@
-# TcValidator
+## TcValidator
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tc_validator`. To experiment with that code, run `bin/console` for an interactive prompt.
+Ruby library to validate Turkis Repuplic ID (TC Kimlik NO).
+TcValidator can validate TC ID from fromal webiste [tckimlik.nvi.gov.tr](https://tckimlik.nvi.gov.tr).
+It needs Turkis Repuplic ID (TC Kimlik No), firstname, lastname and birth year to try the validation.
 
-TODO: Delete this and the text above, and describe your gem
+TcValidator also using [Savon](https://github.com/savonrb/savon) gem as runtime dependency
+for SOAP client.
 
 ## Installation
 

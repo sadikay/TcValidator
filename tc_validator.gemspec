@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["sadikay"]
   spec.email         = ["sadikay91@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Ruby library to validate Turkis Repuplic ID (TC Kimlik NO)}
+  spec.description   = %q{TcValidator can validate TR_ID from https://tckimlik.nvi.gov.tr.}
+  spec.homepage      = "https://github.com/sadikay/tcvalidator"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
@@ -30,6 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "savon"
   spec.add_development_dependency "activesupport"
+  spec.add_development_dependency "rspec"
 
   spec.add_runtime_dependency 'savon'
 end

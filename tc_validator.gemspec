@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["sadikay91@gmail.com"]
 
   spec.summary       = %q{Ruby library to validate Turkis Repuplic ID (TC Kimlik NO)}
-  spec.description   = %q{TcValidator can validate TR_ID from https://tckimlik.nvi.gov.tr.}
+  spec.description   = %q{TcValidator can validate TR ID from https://tckimlik.nvi.gov.tr.}
   spec.homepage      = "https://github.com/sadikay/tcvalidator"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

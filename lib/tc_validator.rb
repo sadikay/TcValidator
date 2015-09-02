@@ -15,7 +15,7 @@ module TcValidator
                              })
      response.body[:tc_kimlik_no_dogrula_response][:tc_kimlik_no_dogrula_result]
    rescue Savon::SOAPFault
-    'Invalid TC NO'
+    'Invalid TC ID'
    end
   end
 end

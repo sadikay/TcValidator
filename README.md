@@ -42,7 +42,7 @@ TcValidator.check_tc_id("xxxxxxxxxxx", 'Sadık', 'Ay', '19xx')
 ```ruby
 # if "xxxxxxxxxxx" square with TC Kimlik No Algorithm and other parameters square with Faruk's infos
 # The below command returns true
-TcValidator.check_tc_id("xxxxxxxxxxx", 'Ömer Faruk', 'Aydın', '19xx')
+TcValidator.check_tc_id("xxxxxxxxxxx", 'Kerim Rıza', 'Karalı', '19xx')
 => true
 ```
 

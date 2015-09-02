@@ -69,3 +69,4 @@ commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.or
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+6. 

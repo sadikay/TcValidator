@@ -40,27 +40,11 @@ TcValidator.check_tc_id('xxxxxxxxxxx', 'Sadık', 'Ay', '19xx')
 ```
 
 ```ruby
-# if 'xxxxxxxxxxx' square with TC Kimlik No Algorithm and other parameters square with Faruk's infos
+# if 'xxxxxxxxxxx' square with TC Kimlik No Algorithm and other parameters square with Kerim's infos
 # The below command returns true
 TcValidator.check_tc_id('xxxxxxxxxxx', 'Kerim Rıza', 'Karalı', '19xx')
 => true
 ```
-
-```ruby
-# If TC ID  doesn't square with TC Kimlik No Algorithm
-# The above command returns 'Invalid TC ID'
-TcValidator.check_tc_id('11111111111', 'Ekin', 'Kara', '19xx')
-=> Invalid TC ID
-```
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt
-that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the
-version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git
-commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 

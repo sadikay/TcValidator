@@ -16,11 +16,11 @@ module TcValidator
                                                     'TCKimlikNo' => tc_id,
                                                     'Ad' => name.replace_and_upcase,
                                                     'Soyad' => surname.replace_and_upcase,
-                                                    'DogumYili' => year
+                                                    'DogumYili' => year.to_s
                                                   })
       response.body[:tc_kimlik_no_dogrula_response][:tc_kimlik_no_dogrula_result]
     rescue Savon::SOAPFault
-      'Invalid TC NO'
+      return false
     end
   end
 end

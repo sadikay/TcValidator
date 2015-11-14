@@ -27,6 +27,7 @@ Or install it yourself as:
 ## Usage
 Pass TC ID, first name, last name and birth year as string parameters to validator.
 ```ruby
+require 'tc_validator'
 TcValidator.check_tc_id(tc_id, name, last_name, birth_year)
 ```
 More detailed examples:

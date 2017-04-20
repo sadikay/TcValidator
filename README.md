@@ -49,7 +49,7 @@ TcValidator.check_tc_id('xxxxxxxxxxx', 'Kerim Rıza', 'Karalı', '19xx')
 
 ## Contributing
 
-1. Fork it ( https://github.com/sadikay/tc_validator/fork )
+1. Fork it 
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

@@ -1,7 +1,7 @@
 ## TcValidator
 
 Ruby library to validate Turkish Republic ID (TC Kimlik NO).
-TcValidator can validate TC ID from formal website [tckimlik.nvi.gov.tr](https://tckimlik.nvi.gov.tr).
+TcValidator can validate TC ID from formal website [tckimlik.nvi.gov.tr](https://tckimlik.nvi.gov.tr). (TC kimlik NO doğrulamaç)
 
 It needs Turkish Republic ID (TC Kimlik No), first name, last name and birth year to try the validation.
 
